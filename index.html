@@ -23,6 +23,8 @@
     <title>Emergency Service Directory</title>
   </head>
   <body>
+    <!-- nav section -->
+
     <nav class="flex justify-between mx-[60px] my-[30px]">
       <div class="nav-left">
         <div class="nav-chilt flex justify-center">
@@ -37,23 +39,27 @@
           <div
             class="flex justify-center items-center w-[123px] h-[52px] bg-[#41ff6b1a] gap-[10px] rounded-[50px]"
           >
-            <p class="font-bold">0</p>
+            <p class="font-bold" id="live-count">0</p>
             <img class="w-7 h-7" src="/assets/heart.png" alt="" />
           </div>
           <div
             class="flex justify-center items-center w-[106px] h-[52px] bg-[#41ff6b1a] rounded-[50px] gap-[10px]"
           >
-            <p class="font-bold">100</p>
+            <p class="font-bold" id="coin">100</p>
             <img class="w-7 h-7" src="/assets/coin.png" alt="" />
           </div>
           <div
             class="w-[127px] h-[52px] bg-[#00A63E] rounded-[52px] text-center"
           >
-            <p class="mt-2 text-white font-bold">2 copy</p>
+            
+            <p class="mt-2 text-white font-bold text-2xl"><span id="total-copy" class="mr-2">0 </span>copy</p>
           </div>
         </div>
       </div>
     </nav>
+
+    <!-- hero section -->
+
     <section class="hero">
       <div
         class="hero-parents w-[100%] h-[240px] bg-gradient-to-t from-[#013223] to-[#006747] text-center p-4"
@@ -70,9 +76,9 @@
         </p>
       </div>
     </section>
-    <main class="mt-8">
-      <div class="parents-div  flex container mx-auto ">
-        <div class="left-div grid grid-cols-3 gap-8 bg-[#f5fff6]">
+    <main class="mt-8 bg-[#f5fff6]">
+      <div class="parents-div  flex container mx-auto gap-4 ">
+        <div class="left-div grid grid-cols-3 gap-8 ">
 
           <div class="cart1   bg-white p-[32px] ">
             <div class="flex justify-between items-center]">
@@ -137,21 +143,20 @@
                 src="./assets/fire-service.png"
                 alt=""
               />
-              <span class="w-6 h-6"><i class="fa-regular fa-heart"></i></span>
+              <span id="heart-3" class="w-6 h-6"><i class="fa-regular fa-heart"></i></span>
             </div>
-            <h2 class="font-bold text-2xl mt-2">Fire Service Number</h2>
+            <h2 id="title-h2" class="font-bold text-2xl mt-2">Fire Service Number</h2>
             <h4 class="text-[18px]">Fire Service</h4>
-            <h1 class="text-4xl font-bold mt-6">999</h1>
+            <p  class="text-4xl font-bold mt-6" id="text">999</p>
             <div
-              class="w-[53px] h-[34px] bg-[#f2f2f2] rounded-4xl text-center mt-2"
-            >
+              class="w-[53px] h-[34px] bg-[#f2f2f2] rounded-4xl text-center mt-2">
               <h1 class="font-400 text-[18px]">Fire</h1>
             </div>
             <div class="flex gap-2 mt-5">
-              <button class="w-[180px] h-[40px] shadow-md rounded-lg">
+              <button id="btn-copy" class="w-[180px] h-[40px] shadow-md rounded-lg ">
                 <span class="mr-1"><i class="fa-regular fa-copy"></i></span>copy
               </button>
-              <button class="w-[180px] h-[40px] bg-[Green] rounded-lg">
+              <button id="btn" class="w-[180px] h-[40px] bg-[Green] rounded-lg">
                 <span><i class="fa-solid fa-phone"></i></span>call
               </button>
             </div>
@@ -325,12 +330,18 @@
             </div>
           </div>
         </div>
-        <div class="right-div h-auto">
-            <form action="">
-                <textarea class="h-full" name="" id="" cols="30" rows="45"></textarea>
-            </form>
+        <div class="right-div bg-white w-[30%]">
+            <div id="" class="  justify-between mt-4 p-3">
+                <button class="font-bold"><span class="mr-2"><i class="fa-regular fa-clock"></i></span>Call History</button>
+                <button id="clear" class="w-15 h-6 bg-green-500 rounded-lg font-bold text-white ml-30">Clear</button>
+                <div class="text-2xl font-bold" id="History"></div>
+            </div>
         </div>
       </div>
-    </main>
+    </main> 
+    <script>
+      let 
+    </script>
+    <script src="./sript.js"></script>
   </body>
 </html>
